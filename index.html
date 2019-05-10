@@ -8,13 +8,21 @@
     background-color : green;
     }
     .hatif {
-    font-size : 50%;
+    font-size : 80%;
     }
     .fruit {
-    font-size : 150%;
+    font-size : 120%;
     }
   </style>
   <body>
+    <script>
+      function mangetoggle() {
+      $(".fruit").toggle();
+      $(".hatif").toggle();
+      }
+      $(function() {$(".hatif").hide() });
+    </script>
+    <button onclick=" mangetoggle()"> TOGGLE </button> 
    <div class="mange fruit">Pomme</div>
    <div class="mange hatif">Bamba</div>
    <div class="mange hatif">Chips</div>
